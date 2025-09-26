@@ -15,11 +15,11 @@ RUN curl -LO "https://dl.k8s.io/release/v1.28.0/bin/linux/amd64/kubectl" && \
     mv kubectl /usr/local/bin/
 
 # Install Bitwarden CLI
-RUN wget https://github.com/bitwarden/clients/releases/download/cli-v2024.9.0/bw-linux-2024.9.0.zip && \
-    unzip bw-linux-2024.9.0.zip && \
+RUN wget https://github.com/bitwarden/clients/releases/download/cli-v2025.9.0/bw-linux-2025.9.0.zip && \
+    unzip bw-linux-2025.9.0.zip && \
     chmod +x bw && \
     mv bw /usr/local/bin/ && \
-    rm bw-linux-2024.9.0.zip
+    rm bw-linux-2025.9.0.zip
 
 # Create non-root user
 RUN adduser -D -s /bin/bash syncuser

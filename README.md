@@ -4,7 +4,7 @@ Docker image with Bitwarden CLI and kubectl for Kubernetes secret synchronizatio
 
 ## Contents
 - Alpine Linux 3.19 base
-- Bitwarden CLI v2024.9.0
+- Bitwarden CLI v2025.9.0
 - kubectl v1.28.0
 - bash, curl, jq, wget
 
