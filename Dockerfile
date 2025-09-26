@@ -1,13 +1,14 @@
 FROM alpine:3.19
 
-# Install required packages
+# Install required packages and glibc compatibility
 RUN apk add --no-cache \
     bash \
     curl \
     jq \
     wget \
     unzip \
-    ca-certificates
+    ca-certificates \
+    gcompat
 
 # Install kubectl
 RUN curl -LO "https://dl.k8s.io/release/v1.28.0/bin/linux/amd64/kubectl" && \
