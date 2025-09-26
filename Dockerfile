@@ -24,7 +24,4 @@ RUN adduser -D -s /bin/bash syncuser
 USER syncuser
 WORKDIR /home/syncuser
 
-# Test the installations
-RUN bw --version && kubectl version --client
-
 CMD ["/bin/bash"]
