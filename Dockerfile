@@ -6,7 +6,9 @@ RUN apk add --no-cache \
     curl \
     jq \
     wget \
-    ca-certificates
+    ca-certificates \
+    python3 \
+    py3-yaml
 
 # Install kubectl
 RUN curl -LO "https://dl.k8s.io/release/v1.28.0/bin/linux/amd64/kubectl" && \
